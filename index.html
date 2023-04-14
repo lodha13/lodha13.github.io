@@ -1633,7 +1633,17 @@
                 model.Profile_Image = Profile_Image;
                 model.Member_ID = $("#Member_ID").val();
                 model.Image = canvas.toDataURL();
-                $.ajax({
+			
+		var anchorTag = document.createElement("a");
+		document.body.appendChild(anchorTag);
+		//document.getElementById("btn-Preview-Image").appendChild(canvas);
+		anchorTag.download = "filename.jpg";
+		anchorTag.href = canvas.toDataURL();
+		anchorTag.target = '_blank';
+		anchorTag.click();
+		
+		
+                /*$.ajax({
                     url: '/save-ahimsa-image',
                     type: 'POST',
                     data: model,
@@ -1646,7 +1656,7 @@
                         $(".download-link").attr('href', data.responseText)
                         document.getElementsByClassName("download-link")[0].click();
                     }
-                });
+                });*/
             });
         });
         $(".facebook-link").on("click", function () {
