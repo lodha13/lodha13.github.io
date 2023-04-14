@@ -1,40 +1,1846 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    
+    <!-- styles-->
+    <link rel="stylesheet" href="./css/styles.min.css?v=3">
+    <link rel="stylesheet" href="./css/custom.css?v=6">
+    
+    <link rel="stylesheet" href="./css/custom.css">
+    <!-- web-font loader-->
+    <script>
+        WebFontConfig = {
+            google: {
+                families: ['Quicksand:300,400,500,700', 'Permanent+Marker:400'],
+            }
+        }
+        function font() {
+            var wf = document.createElement('script')
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'
+            wf.type = 'text/javascript'
+            wf.async = 'true'
+            var s = document.getElementsByTagName('script')[0]
+            s.parentNode.insertBefore(wf, s)
+        }
+        font()
+    </script>
+
+    
+    <link href="https://foliotek.github.io/Croppie/croppie.css" rel="stylesheet" />
+
+
+    <style type="text/css">
+        .ahimsa-banner {
+            width: 488px;
+            left: 292px;
+        }
+                label.cabinet {
+                    display: block;
+                    cursor: pointer;
+                    top: -1px;
+                    left: 0px;
+                    position: absolute;
+                }
+
+                    label.cabinet input.file {
+                        position: relative;
+                        height: 100%;
+                        width: auto;
+                        opacity: 0;
+                        -moz-opacity: 0;
+                        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+                        margin-top: -30px;
+                    }
+
+                #upload-demo {
+                    width: 100%;
+                    height: 466px;
+                    margin-bottom: 35px;
+                }
+
+                figure figcaption {
+                    position: absolute;
+                    top: 7px;
+                    bottom: 0;
+                    height: 35px;
+                    width: 35px;
+                    margin-left: 10px;
+                    color: #005e9e;
+                    background-color: #fff;
+                    padding-left: 10px;
+                    padding-top: 8px;
+                    border-radius: 50%;
+                    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+                }
+
+                .img-thumbnail {
+                    display: inline-block;
+                    max-width: 100%;
+                    width: 150px;
+                    height: 150px;
+                    padding: 0;
+                    line-height: 1.42857143;
+                    background-color: #fff;
+                    border: 1px solid #4f2d79;
+                    border-radius: 50%;
+                    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                    -webkit-transition: all .2s ease-in-out;
+                    -o-transition: all .2s ease-in-out;
+                    transition: all .2s ease-in-out;
+                }
+
+        .img-position-cls-asimsa {
+            position: absolute;
+            top: 314px;
+            left: 66px;
+            height: 115px;
+            width: auto;
+        }
+        .img-position-cls-asimsa1 {
+            position: absolute;
+            top: 135px;
+            left: 51px;
+            height: 99px;
+            width: auto;
+        }
+                @media only screen and (max-width: 1200px) {
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 117px;
+                        height: 117px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border: 1px solid #4f2d79;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 316px;
+                        left: 67px;
+                        width: auto;
+                        height: 112px;
+                    }
+                    .img-position-cls-asimsa1 {
+                        position: absolute;
+                        top: 135px;
+                        left: 51px;
+                        width: auto;
+                        height: 99px;
+                    }
+
+                }
+
+
+                @media only screen and (max-width: 992px) {
+
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 182px;
+                        height: 182px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border: 1px solid #4f2d79;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 250px;
+                        left: 56px;
+                        height: 89px;
+                        width: auto;
+                    }
+
+                    .img-position-cls-asimsa1 {
+                        position: absolute;
+                        top: 135px;
+                        left: 51px;
+                        width: auto;
+                        height: 99px;
+                    }
+                }
+
+                @media only screen and (max-width:768px) {
+                    .ahimsa-banner {
+                        width: 304px;
+                        height: 129px;
+                        top: 81px;
+                        text-align: center;
+                        margin: auto;
+                        left: 10px;
+                    }
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 180px;
+                        height: 180px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border: 1px solid #4f2d79;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 382px;
+                        left: 78px;
+                        height: 136px;
+                        width: auto;
+                    }
+
+                    .img-position-cls-asimsa1 {
+                        position: absolute;
+                        top: 135px;
+                        left: 51px;
+                        width: auto;
+                        height: 99px;
+                    }
+                }
+
+
+                @media only screen and (max-width:600px) {
+
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 135px;
+                        height: 135px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border: 1px solid #4f2d79;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 283px;
+                        left: 62px;
+                        height: 101px;
+                        width: auto;
+                    }
+                    .img-position-cls-asimsa1 {
+                        position: absolute;
+                        top: 135px;
+                        left: 51px;
+                        width: auto;
+                        height: 99px;
+                    }
+
+                }
+            @media only screen and (max-width: 530px)
+                {
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 277px;
+                        left: 61px;
+                        height: 99px;
+                        width: auto;
+                    }
+
+                    .img-position-cls-asimsa1 {
+                        position: absolute;
+                        top: 135px;
+                        left: 51px;
+                        width: auto;
+                        height: 99px;
+                    }
+            }
+
+                @media only screen and (max-width:500px) {
+
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 101px;
+                        height: 101px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border: 1px solid #4f2d79;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 260px;
+                        left: 57px;
+                        height: 95px;
+                        width: auto;
+                    }
+
+                    .img-position-cls-asimsa1 {
+                        position: absolute;
+                        top: 135px;
+                        left: 51px;
+                        width: auto;
+                        height: 99px;
+                    }
+                }
+        @media only screen and (max-width: 440px) {
+             .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 227px;
+                        left: 52px;
+                        height: 82px;
+                        width: auto;
+                    }
+
+            
+            .upperr {
+                width: 384px !important;
+                height: 384px !important;
+                /*border-radius: 50%;*/
+                overflow: hidden;
+            }
+
+            .imggg {
+                width: 100% !important;
+                height: 100% !important;
+                /*margin-top: -135px !important;*/
+                /*margin-left: -10px !important;*/
+            }
+
+            .img-position-cls-asimsa1 {
+                position: absolute;
+                top: 116px !important;
+                left: 45px !important;
+                width: auto;
+                height: 90px !important;
+            }
+        }
+
+                @media only screen and (max-width:412px) {
+                    .upperr {
+                        width: 384px !important;
+                        height: 384px !important;
+                        border-radius: 50%;
+                        overflow: hidden;
+                    }
+
+                    
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 100px;
+                        height: 100px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border: 1px solid #4f2d79;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+                   
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 211px;
+                        left: 50px;
+                        height: 77px;
+                        width: auto;
+                    }
+/**/
+                    .img-position-cls-asimsa1 {
+                        position: absolute;
+                        top: 117px;
+                        left: 45px;
+                        width: auto;
+                        height: 89px;
+                    }
+                }
+
+                @media only screen and (max-width: 410px) {
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 211px;
+                        left: 49px;
+                        height: 77px;
+                        width: auto;
+                    }
+
+                    .img-position-cls-asimsa1 {
+                        position: absolute;
+                        top: 117px;
+                        left: 45px;
+                        height: 89px;
+                        width: auto;
+                    }
+                }
+
+                /*@media only screen and (max-width:400px) {
+
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 95px;
+                        height: 95px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border: 1px solid #4f2d79;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }*/
+
+                   /* .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 205px;
+                        left: 49px;
+                        height: 74px;
+                        width: auto;
+                    }*/
+
+                    /*.img-position-cls-asimsa {
+                        position: absolute;
+                        top: 135px;
+                        left: 51px;
+                        width: auto;
+                        height: 99px;
+                    }
+                }*/
+
+
+                @media only screen and (max-width:393px) {
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 201px;
+                        left: 48px;
+                        height: 73px;
+                        width: auto;
+                    }
+
+                    .img-position-cls-asimsa1 {
+                        position: absolute;
+                        top: 109px !important;
+                        left: 44px !important;
+                        height: 87px !important;
+                        width: auto;
+                    }
+/*
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 104px;
+                        left: 44px;
+                        height: 87px;
+                        width: auto;
+                    }*/
+
+                    .upperr {
+                        width: 368px !important;
+                        height: 368px !important;
+                        /*border-radius: 50%;*/
+                        overflow: hidden;
+                    }
+                    .imggg {
+                        width: 432px !important;
+                        height: 622px !important;
+                        margin-top: -142px;
+                        margin-left: -10px;
+                    }
+                }
+
+                @media only screen and (max-width:390px) {
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 200px;
+                        left: 48px;
+                        height: 71px;
+                        width: auto;
+                    }
+
+
+                    .img-position-cls-asimsa1 {
+                        position: absolute;
+                        top: 109px;
+                        left: 44px;
+                        height: 87px;
+                        width: auto;
+                    }
+                    /*
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 104px;
+                        left: 44px;
+                        height: 87px;
+                        width: auto;
+                    }*/
+
+                    .upperr {
+                        width: 368px !important;
+                        height: 368px !important;
+                        overflow: hidden;
+                    }
+
+                    .imggg {
+                        width: 432px !important;
+                        height: 622px !important;
+                        margin-top: -142px;
+                        margin-left: -10px;
+                    }
+                }
+
+                @media only screen and (max-width:375px) {
+                    .upperr {
+                        width: 363px !important;
+                        height: 363px !important;
+                        overflow: hidden;
+                    }
+                    .imggg {
+                        width: 427px !important;
+                        height: 611px !important;
+                        margin-top: -131px !important;
+                        margin-left: -10px;
+                    }
+                   
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 90px;
+                        height: 90px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border: 1px solid #4f2d79;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+                    .img-position-cls-asimsa1 {
+                        position: absolute;
+                        top: 108px;
+                        left: 43px;
+                        height: 87px;
+                        width: auto;
+                    }
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 191px;
+                        left: 46px;
+                        height: 69px;
+                        width: auto;
+                    }
+                }
+
+
+
+                @media only screen and (max-width:360px) {
+                    .upperr {
+                        width: 331px !important;
+                        height: 331px !important;
+                        overflow: hidden;
+                    }
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 87px;
+                        height: 87px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border: 1px solid #4f2d79;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 183px;
+                        left: 45px;
+                        height: 66px;
+                        width: auto;
+                    }
+
+                    .img-position-cls-asimsa1 {
+                        position: absolute;
+                        top: 100px !important;
+                        left: 41px !important;
+                        height: 78px !important;
+                        width: auto;
+                    }
+
+                    .imggg {
+                        width: 393px !important;
+                        height: 552px !important;
+                        margin-top: -117px !important;
+                        margin-left: -10px;
+                    }
+
+
+                }
+
+                @media only screen and (max-width:280px) {
+                    .upperr {
+                        width: 252px !important;
+                        height: 252px !important;
+                        overflow: hidden;
+                    }
+
+                    .imggg {
+                        width: 298px !important;
+                        height: 413px !important;
+                        margin-top: -86px !important;
+                        margin-left: -1px;
+                    }
+
+                   
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 65px;
+                        height: 65px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border: 1px solid #4f2d79;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+                    .img-position-cls-asimsa1 {
+                        position: absolute;
+                        top: 76px !important;
+                        left: 32px !important;
+                        height: 59px !important;
+                        width: auto;
+                    }
+
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 138px;
+                        left: 37px;
+                        height: 51px;
+                        width: auto;
+                    }
+                }
+
+                .blog-post__socials {
+                    display: inline-flex;
+                }
+
+                .btn-download-wid-set {
+                }
+
+        .promo-primary {
+            background-color: #292A58;
+        }
+
+        .para-peace {
+            color: #afaa9a;
+            margin-top:25px;
+        }
+
+
+        .toggleImage{
+            width:20px;
+        }
+        .upperr {
+            width: 430px;
+            height: 430px;
+            overflow: hidden;
+        }
+
+        .imggg {
+            width: 100%;
+            height: 100%;
+            /*margin-top: -142px;
+            margin-left: -10px;*/
+        }
+
+      
+    </style>
+
+
+
 </head>
+
 <body>
+    <div class="preloader wait-loader" style="display:none">
+        <div class="loader">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="page-wrapper">
+        <!-- aside dropdown start-->
+        <div class="aside-dropdown">
+            <div class="aside-dropdown__inner">
+                <span class="aside-dropdown__close">
+                    <svg class="icon">
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </span>
+                
 
 
-<div class="main-image" style="display: block; float: left;">
-	
-	<img src="images/candle_march_1.png"/ style="width:400px; height:400px">
-	<div class="overlay-div">
-	<img class="overlay-image" id="uploadPreview"/>
-	</div>
+    <div class="aside-dropdown__item">
+            <div class="aside-inner">
+                <span class="aside-inner__title">Email</span>
+                <div class="d-inline">
+                            <a class="aside-inner__link" href="mailto:secretary@jitoladieswing.in"> secretary@jitoladieswing.in</a>
+                                <span>/</span>
+                            <a class="aside-inner__link" href="mailto:mita.mehta@jitoladieswing.in">  mita.mehta@jitoladieswing.in</a>
+                </div>
+            </div>
+                    <div class="aside-inner">
+                <span class="aside-inner__title">Phone numbers</span><a class="aside-inner__link" href="tel:+919331707877">+91-9331707877</a>
+            </div>
+    <ul class="aside-socials">
+                <li class="aside-socials__item">
+                    <a class="aside-socials__link" href="https://www.facebook.com/Jito.ladies.wing.kolkata" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li class="aside-socials__item">
+                    <a class="aside-socials__link" href="javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li class="aside-socials__item">
+                    <a class="aside-socials__link" href="https://www.youtube.com/channel/UCbh4ybTqeY3iWIuTrRBKMEA" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                </li>
+                <li class="aside-socials__item">
+                    <a class="aside-socials__link aside-socials__link--active" href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li class="aside-socials__item">
+                    <a class="aside-socials__link" href="https://www.linkedin.com/in/jito-ladies-wing-kolkata/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+
+    </ul>
+    </div>
+
+
+                    <div class="aside-dropdown__item">
+                        <a class="button button--squared" href="/member-login"><span>Member Login</span></a>
+                    </div>
+
+            </div>
+        </div>
+        <!-- aside dropdown end-->
+        <!-- top bar start-->
+        <div class="top-bar d-none d-lg-block">
+            <div class="container-fluid">
+                <div class="row align-items-end">
+
+    <div class="col-lg-9">
+            <a class="top-bar__link" href="tel:+919331707877"><i class="fa fa-phone pr-2"></i>+91-9331707877</a>
+                        <div class="d-inline ml-5">
+                    <i class="fa fa-envelope"></i>
+                            <a class="top-bar__link ml-0 mr-0" href="mailto:secretary@jitoladieswing.in"> secretary@jitoladieswing.in</a>
+                                <span>/</span>
+                            <a class="top-bar__link ml-0 mr-0" href="mailto:mita.mehta@jitoladieswing.in">  mita.mehta@jitoladieswing.in</a>
+
+
+                </div>
+    </div>
+    <div class="col-lg-3 text-right">
+        <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.facebook.com/Jito.ladies.wing.kolkata" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.youtube.com/channel/UCbh4ybTqeY3iWIuTrRBKMEA" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.linkedin.com/in/jito-ladies-wing-kolkata/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+
+        </ul>
+    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- top bar end-->
+        <!-- header start-->
+        
+        <main class="main">
+            
+
+
+
+<input type="hidden" id="image_url" />
+<input type="hidden" id="social-link" />
+<input type="hidden" id="Member_ID" />
+
+<section class="promo-primary">
+    
+        
+        <img class="img--bg ahimsa-banner" src="./img/ahimsa-event/ahimsa_logo.png" alt="img">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-auto">
+                <div class="align-container">
+                    <div class="align-container__item">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-4 pb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 co-12 mx-auto">
+                <div id="my-node" class="upperr">
+                    <div>
+                        <img src="./img/ahimsa-event/ahimsa-run1.png" alt="Alternate Text" class="imggg ahimsa-profile-image">
+                        <label class="cabinet center-block">
+                            <figure>
+                                <img src="./IIFL JITO AHIMSA RUN - FOR PEACE , FOR NON VIOLENCE_files/upload.png" class="gambar img-responsive img-thumbnail img-position-cls-asimsa1" id="item-img-output">
+                            </figure>
+                            <input type="file" class="item-img file center-block" name="file_photo" accept="image/*">
+                        </label>
+                    </div>
+                </div>
+                    <!-- main code -->
+                    <!--<div id="my-node">
+        <div>
+
+            <img src="~./img/ahimsa-event/ahimsa-run1.png" alt="Alternate Text" class="img-fluid img-cls-disprofile-aahimsa ahimsa-profile-image">-->
+                    <!-- main code -->
+                    <!--<label class="cabinet center-block">
+        <figure>
+            <img src="" class="gambar img-responsive img-thumbnail img-position-cls-asimsa" id="item-img-output">
+        </figure>
+        <input type="file" class="item-img file center-block" name="file_photo" accept="image/*">
+    </label>-->
+                    <!-- main code -->
+                    <!--</div>
+    </div>-->
+                </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-lg-6 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-12 pb-2">
+                        <span>
+                            <input type="radio" class="toggleImage" name="togglgImage" value="Posting" id="Posting" /><label for="Posting"> Posting </label>
+                        </span>
+                        <span class="ml-3">
+                            <input type="radio" class="toggleImage" name="togglgImage" value="Social Profile" id="Social" checked/>  <label for="Social">Social Profile </label>
+                        </span>
+
+                    </div>
+                </div>
+                <div class="row ">
+                
+                    <div class="col-md-3 pb-2">
+                        <a href="#" class="btn btn-primary test btn-block">Select&nbsp;Image</a>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" id="btn_save_image" class="btn btn-success btn-block">Download</button>
+                    </div>
+                    <div class="col-md-5 pb-2 float-md-right text-md-right">
+                        <ul class="blog-post__socials text-right" id="social-links">
+                            <li>
+                                <a href="javascript:void(0);" target="_blank" class="facebook-link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            
+                            <li>
+                                <a href="javascript:void(0);" target="_blank" class="linkedin-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- ============================================================ -->
+<!-- model start -->
+<!-- ============================================================ -->
+
+<div class="modal fade" id="cropImagePop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    <?=multiLanguage( "Edit Foto" , "Edit Photo" )?>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div id="upload-demo" class="center-block"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" id="cropImageBtn" class="btn btn-primary">Crop</button>
+            </div>
+        </div>
+    </div>
 </div>
-
-<div style="bottom: 0px; position:fixed;">
-<input type="file" id="file"/>
-
+<!-- ============================================================ -->
+<!-- model end -->
+<!-- ============================================================ -->
+<a href="#" download class="download-link" style="display:none" target="_blank">download</a>
+<div id="previewImg" style="display:none">
 </div>
+        </main>
+        
+        <!-- causes start-->
+
+<section class="section causes causes--style-2 pl-lg-5 pr-lg-5 mb-0 pb-0" id="eventsList">
+    <div class="container-fluid pl-lg-5 pr-lg-5">
+        <div class="row align-items-end margin-bottom">
+            <div class="col-md-6 col-xl-5">
+                <div class="heading heading--primary no-margin-bottom">
+                    <span class="heading__pre-title">JITO Ladies Wing Kolkata</span>
+                    <h2 class="heading__title no-margin-bottom"> <span> Event</span></h2>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-6 offset-xl-1 d-flex justify-content-md-end">
+                <!-- slider nav start-->
+                <div class="slider__nav causes-slider__nav">
+                    <div class="slider__arrows">
+                        <div class="slider__prev">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="slider__next">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider nav end-->
+            </div>
+        </div>
+    </div>
+    <div class="offset-margin">
+        <div class="causes-holder__wrapper">
+            <div class="causes-slider offset-margin">
+                    <div class="causes-slider__item">
+                        <div class="causes-item causes-item--primary">
+                            <div class="causes-item__body p-0">
+                                <div class="row">
+                                    <div class="col-3 eventdate-container-cls">
+
+                                        <h3 class="text-center">17</h3>
+                                        <h5 class="eventdate-month_cls text-center">Nov</h5>
+                                        <p class="eventdate-year_cls text-center">2022</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="causes-item__top" style="background: url('./img/home/jito-event.webp')no-repeat center center fixed">
+                                            <div class="text-left">
+                                                <h6 class=" Custom_event_title">  <a href="/events/november-2022">Self Managing Leadership Session</a></h6>
+                                                <p class="font-small-event-para"><a href="/events/november-2022"><b>Venue</b> - Regent Vatika</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="causes-slider__item">
+                        <div class="causes-item causes-item--primary">
+                            <div class="causes-item__body p-0">
+                                <div class="row">
+                                    <div class="col-3 eventdate-container-cls">
+
+                                        <h3 class="text-center">6</h3>
+                                        <h5 class="eventdate-month_cls text-center">Nov</h5>
+                                        <p class="eventdate-year_cls text-center">2022</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="causes-item__top" style="background: url('./img/home/jito-event.webp')no-repeat center center fixed">
+                                            <div class="text-left">
+                                                <h6 class=" Custom_event_title">  <a href="/events/november-2022">Installation &amp; Oath Taking ceremony</a></h6>
+                                                <p class="font-small-event-para"><a href="/events/november-2022"><b>Venue</b> - Ganpati Banquets</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="causes-slider__item">
+                        <div class="causes-item causes-item--primary">
+                            <div class="causes-item__body p-0">
+                                <div class="row">
+                                    <div class="col-3 eventdate-container-cls">
+
+                                        <h3 class="text-center">27</h3>
+                                        <h5 class="eventdate-month_cls text-center">Apr</h5>
+                                        <p class="eventdate-year_cls text-center">2022</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="causes-item__top" style="background: url('./img/home/jito-event.webp')no-repeat center center fixed">
+                                            <div class="text-left">
+                                                <h6 class=" Custom_event_title">  <a href="/events/april-2022">Andaz Apna Apna</a></h6>
+                                                <p class="font-small-event-para"><a href="/events/april-2022"><b>Venue</b> - PANACHE BANQUETS, NEAR ELGIN ROAD CROSSING, KOLKATA</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="causes-slider__item">
+                        <div class="causes-item causes-item--primary">
+                            <div class="causes-item__body p-0">
+                                <div class="row">
+                                    <div class="col-3 eventdate-container-cls">
+
+                                        <h3 class="text-center">24</h3>
+                                        <h5 class="eventdate-month_cls text-center">Mar</h5>
+                                        <p class="eventdate-year_cls text-center">2022</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="causes-item__top" style="background: url('./img/home/jito-event.webp')no-repeat center center fixed">
+                                            <div class="text-left">
+                                                <h6 class=" Custom_event_title">  <a href="/events/march-2022">GROW YOUR MICRO GREENS</a></h6>
+                                                <p class="font-small-event-para"><a href="/events/march-2022"><b>Venue</b> - Zoom Meeting</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="causes-slider__item">
+                        <div class="causes-item causes-item--primary">
+                            <div class="causes-item__body p-0">
+                                <div class="row">
+                                    <div class="col-3 eventdate-container-cls">
+
+                                        <h3 class="text-center">25</h3>
+                                        <h5 class="eventdate-month_cls text-center">Feb</h5>
+                                        <p class="eventdate-year_cls text-center">2022</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="causes-item__top" style="background: url('./img/home/jito-event.webp')no-repeat center center fixed">
+                                            <div class="text-left">
+                                                <h6 class=" Custom_event_title">  <a href="/events/february-2022">COFFEE KAFI HAI KYA?</a></h6>
+                                                <p class="font-small-event-para"><a href="/events/february-2022"><b>Venue</b> - CRAFT COFFEE BALLY GUNGE</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="causes-slider__item">
+                        <div class="causes-item causes-item--primary">
+                            <div class="causes-item__body p-0">
+                                <div class="row">
+                                    <div class="col-3 eventdate-container-cls">
+
+                                        <h3 class="text-center">29</h3>
+                                        <h5 class="eventdate-month_cls text-center">Jan</h5>
+                                        <p class="eventdate-year_cls text-center">2022</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="causes-item__top" style="background: url('./img/home/jito-event.webp')no-repeat center center fixed">
+                                            <div class="text-left">
+                                                <h6 class=" Custom_event_title">  <a href="/events/january-2022">Anmol Rishtey</a></h6>
+                                                <p class="font-small-event-para"><a href="/events/january-2022"><b>Venue</b> - Zoom Meeting</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="causes-slider__item">
+                        <div class="causes-item causes-item--primary">
+                            <div class="causes-item__body p-0">
+                                <div class="row">
+                                    <div class="col-3 eventdate-container-cls">
+
+                                        <h3 class="text-center">28</h3>
+                                        <h5 class="eventdate-month_cls text-center">Jan</h5>
+                                        <p class="eventdate-year_cls text-center">2022</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="causes-item__top" style="background: url('./img/home/jito-event.webp')no-repeat center center fixed">
+                                            <div class="text-left">
+                                                <h6 class=" Custom_event_title">  <a href="/events/january-2022">B2B Networking &amp; Goal Setting</a></h6>
+                                                <p class="font-small-event-para"><a href="/events/january-2022"><b>Venue</b> - Chitrakut Building - Nirvaana Life&#39;s institute</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="causes-slider__item">
+                        <div class="causes-item causes-item--primary">
+                            <div class="causes-item__body p-0">
+                                <div class="row">
+                                    <div class="col-3 eventdate-container-cls">
+
+                                        <h3 class="text-center">22</h3>
+                                        <h5 class="eventdate-month_cls text-center">Jan</h5>
+                                        <p class="eventdate-year_cls text-center">2022</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="causes-item__top" style="background: url('./img/home/jito-event.webp')no-repeat center center fixed">
+                                            <div class="text-left">
+                                                <h6 class=" Custom_event_title">  <a href="/events/january-2022">Face Yoga</a></h6>
+                                                <p class="font-small-event-para"><a href="/events/january-2022"><b>Venue</b> - Zoom Meeting</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="causes-slider__item">
+                        <div class="causes-item causes-item--primary">
+                            <div class="causes-item__body p-0">
+                                <div class="row">
+                                    <div class="col-3 eventdate-container-cls">
+
+                                        <h3 class="text-center">21</h3>
+                                        <h5 class="eventdate-month_cls text-center">Jan</h5>
+                                        <p class="eventdate-year_cls text-center">2022</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="causes-item__top" style="background: url('./img/home/jito-event.webp')no-repeat center center fixed">
+                                            <div class="text-left">
+                                                <h6 class=" Custom_event_title">  <a href="/events/january-2022">Way To Financial Freedom</a></h6>
+                                                <p class="font-small-event-para"><a href="/events/january-2022"><b>Venue</b> - Zoom Meeting</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="causes-slider__item">
+                        <div class="causes-item causes-item--primary">
+                            <div class="causes-item__body p-0">
+                                <div class="row">
+                                    <div class="col-3 eventdate-container-cls">
+
+                                        <h3 class="text-center">19</h3>
+                                        <h5 class="eventdate-month_cls text-center">Jan</h5>
+                                        <p class="eventdate-year_cls text-center">2022</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="causes-item__top" style="background: url('./img/home/jito-event.webp')no-repeat center center fixed">
+                                            <div class="text-left">
+                                                <h6 class=" Custom_event_title">  <a href="/events/january-2022">Guide To Hormonal Harmony</a></h6>
+                                                <p class="font-small-event-para"><a href="/events/january-2022"><b>Venue</b> - Zoom Meeting</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- causes end-->
+        <!-- events start-->
+        <section class="causes pt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="heading heading--primary heading--center">
+                            <h2 class="heading__title"><span>JITO</span> <span>Times</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="event-item event-item-box-x">
+                            <div class="row pt-2">
+                                <div class="col-md-3 col-3">
+                                    <img src="./img/home/i-home-pdf.webp" class="img-fluid" alt="PDF"  width="67" height="73">
+                                </div>
+                                <div class="col-md-9 col-9 pl-0">
+                                    <h6 class="event-titile-all-cls"><a href="./img/JIWO_TIMES_ANNUAL.pdf" target="_blank">JITO Ladies Wing TIMES May 2016</a></h6>
+                                    <a href="./img/JIWO_TIMES_ANNUAL.pdf" class="download-pdf-button" target="_blank">Download Pdf</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="event-item event-item-box-x">
+                            <div class="row pt-2">
+                                <div class="col-md-3 col-3">
+                                    <img src="./img/home/i-home-pdf.webp" class="img-fluid" alt="PDF"  width="67" height="73">
+                                </div>
+                                <div class="col-md-9 col-9 pl-0">
+                                    <h6 class="event-titile-all-cls"><a href="./img/JIWO_TIMES_Issue_2_July2015.pdf" target="_blank">JITO Ladies Wing TIMES 1st March 2015</a></h6>
+                                    <a href="./img/JIWO_TIMES_Issue_2_July2015.pdf" class="download-pdf-button" target="_blank">Download Pdf</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="event-item event-item-box-x">
+                            <div class="row pt-2">
+                                <div class="col-md-3 col-3">
+                                    <img src="./img/home/i-home-pdf.webp" class="img-fluid" alt="PDF"  width="67" height="73">
+                                </div>
+                                <div class="col-md-9 col-9 pl-0">
+                                    <h6 class="event-titile-all-cls"><a href="./img/JIWO_TIMES.pdf" target="_blank">JITO Ladies Wing Trade Fair 2015</a></h6>
+                                    <a href="./img/JIWO_TIMES.pdf" class="download-pdf-button" target="_blank">Download Pdf</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- events end-->
+
+
+
+
+        <section class="py-4 text-white" style="background: url('./img/home/libg.webp')no-repeat center center fixed">
+            <div class="section section-sm bg-gradient-primary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="footafterlisthead text-center">Our Projects & Events</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="list-unstyled tech-feature-list foot-list-item-below-tab">
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i> <a href="/project/jlw-chef-queen"><span> JLW Chef Queen </span></a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i> <a href="/project/womenpreneurs"><span> Womenpreneurs   </span></a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i> <a href="/project/pehchaan"><span> Pehchaan </span></a>
+                                </li>
+                              
+                               
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="list-unstyled tech-feature-list foot-list-item-below-tab">
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i> <a href="/project/manzile"><span> Manzile </span></a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i> <a href="/project/swayam"><span> Swayam </span></a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>  <a href="/project/the-bridal-story"><span> The Bridal Story </span></a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="list-unstyled tech-feature-list foot-list-item-below-tab">
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i> <a href="/project/roshani"><span> Roshani </span></a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i> <a href="/shraman-arogyam"><span> Shraman Arogyam   </span></a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>  <a href="/project/kalasmriti"><span> kalasmriti Event 2021 </span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="list-unstyled tech-feature-list foot-list-item-below-tab">
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i> <a href="/project/zaayka-award-ceremony"><span> Zaayka 2021 </span></a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i> <a href="/events"><span> Events </span></a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i> <a href="/project/jlw"><span> JLW Projects </span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Join start-->
+        <section class="subscribe">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-md-9">
+                        <h2 class="subscribe__title"> Join JITO Ladies Wing ( kolkata )</h2>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="./img/JITO_Ladies_Wing_Form.pdf" target="_blank" class="subscribe-form__submit">Download Form</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Join end-->
+        <!-- footer front_3 start-->
+        <footer class="footer footer--front_3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        
+
+    <div class="footer-contacts">
+            <p class="footer-contacts__address">1, Ramesh Mitra Road, Bhowanipur, Kolkata- 700020</p>
+                    <p class="footer-contacts__phone">
+                Phone:
+                    <a href="tel:+919331707877">+91-9331707877</a>
+            </p>
+           
+
+            <p class="footer-contacts__phone">
+                            <a href="mailto:secretary@jitoladieswing.in"> secretary@jitoladieswing.in</a>
+                                <span>/</span>
+                            <a href="mailto:mita.mehta@jitoladieswing.in">  mita.mehta@jitoladieswing.in</a>
+                
+            </p>
+
+        </div>
+    <!-- footer socials start-->
+<ul class="footer-socials">
+            <li class="footer-socials__item">
+                <a class="footer-socials__link" href="https://www.facebook.com/Jito.ladies.wing.kolkata" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li class="footer-socials__item">
+                <a class="footer-socials__link" href="javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li class="footer-socials__item">
+                <a class="footer-socials__link" href="https://www.youtube.com/channel/UCbh4ybTqeY3iWIuTrRBKMEA" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </li>
+            <li class="footer-socials__item">
+                <a class="footer-socials__link" href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li class="footer-socials__item">
+                <a class="footer-socials__link" href="https://www.linkedin.com/in/jito-ladies-wing-kolkata/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+
+</ul>
+    <!-- footer socials end-->
+
+                    </div>
+                    <div class="col-lg-8">
+                        <!-- footer nav start-->
+                        <nav>
+                            <ul class="footer-menu">
+                                <li class="footer-menu__item footer-menu__item--active">
+                                    <a class="footer-menu__link" href="/">Home</a>
+                                </li>
+
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/core-committee">Core Committee</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/project/jlw">
+                                        JLW Projects
+                                    </a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/jito-times">
+                                        JITO Ladies Wing Times
+                                    </a>
+                                </li>
+
+                                
+
+
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/about-us">About Us</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/planning-committee">Planning Committee</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/events">JLW Events</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/board-members">OLD - Board Members</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/contact-us">Contact Us</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/members">Members</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/jito-ladies-wing-trade-fare-2018">Trade Fair 2018</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/committee-members">OLD - Com. Members</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/gallery">Gallery</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/member-login">Member Login</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/jito-ladies-wing-trade-fare-2017">Trade Fair 2017</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/admin">Admin</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- footer nav end-->
+                    </div>
+                </div>
+            </div>
+            <div class="footer__lower">
+                <div class="container">
+                    <div class="row align-items-baseline">
+                        <div class="col-md-4 text-center offset-md-4">
+                            <p class="footer-copyright">© JITO Ladies Wing (Kolkata) 2023 All right reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer front_3 end-->
+        <button class="scroll-top scroll-to-target open" data-target="html" onclick="topFunction()" id="myBtn">
+            <i class='fa fa-angle-up'></i>
+        </button>
+    </div>
+    <!-- Crop Img model start  -->
+    <div class="modal fade" id="cropImagePop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="opacity: 1;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="mt-4">
+                        Crop Image
+                    </h4>
+                    <button type="button" class="close mt-3" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <!--<h4 class="modal-title" id="myModalLabel">-->
+                        
+                        
+                    <!--</h4>-->
+                </div>
+                <div class="modal-body">
+                    <div id="upload-demo" class="center-block"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" id="cropImageBtn" class="btn btn-primary">Crop</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Crop Img model end  -->
+    <!-- Modal -->
+    <div class="modal fade" id="membermyModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Modal Header</h6>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="facebookmyModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Modal Header</h6>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="dvContent" style="width:100%;height:500px;overflow:auto;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu augue id elit dignissim pretium. Nulla ut metus diam. Vivamus mattis sodales massa eu viverra. Fusce elementum dui lacus, nec porttitor velit. Donec vehicula mollis tincidunt. Proin tellus tortor, egestas vel ultrices ullamcorper, accumsan sit amet ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id purus non justo porttitor pretium. Cras in ipsum dui, ut rutrum nibh. Donec gravida pellentesque fermentum. Nunc tincidunt gravida ligula at dictum. Integer eu orci nec arcu rhoncus facilisis aliquet id metus.
+
+                        Aliquam id tempus risus. Donec id odio id dui rutrum dictum. Donec mollis lacus a metus congue porta. Morbi tincidunt elit vel augue venenatis vestibulum. Quisque auctor orci at elit aliquet ullamcorper volutpat nunc feugiat. Phasellus commodo tristique quam, ac mattis odio scelerisque nec. Phasellus nec lobortis odio. Nunc risus mauris, sollicitudin bibendum porta ultricies, vehicula eu odio. Praesent non lorem diam. Nunc sit amet arcu justo, et venenatis magna. Etiam elementum ipsum eu dui interdum aliquet. Duis scelerisque congue venenatis. Quisque fringilla dui sed felis elementum placerat. Donec ultrices sodales eros viverra vulputate.
+
+                        Donec eu quam nunc, in pharetra libero. Etiam egestas, libero a molestie dapibus, elit neque lobortis nisl, interdum dictum mauris mauris quis enim. Proin porta, nulla et condimentum lobortis, risus lorem ultrices tortor, id cursus nulla libero et lacus. Pellentesque dapibus, erat non vehicula congue, neque est mollis risus, id ornare turpis leo eu eros. Suspendisse commodo elementum odio, in semper est malesuada nec. Praesent et tincidunt mi. Phasellus sodales felis nisl. Pellentesque sit amet arcu justo, auctor adipiscing mauris. Aenean aliquam consequat massa, vitae molestie neque gravida et. Phasellus vehicula euismod porta. Donec eget est enim. Cras mattis commodo sagittis. Vivamus at mauris eu tellus pulvinar pretium a sit amet diam. Pellentesque quis tortor libero. Phasellus eleifend, risus sit amet blandit ultrices, tellus ligula consequat libero, sit amet gravida nunc odio vel turpis. Vestibulum accumsan orci in velit ornare sed venenatis quam consequat.
+
+                        Vestibulum justo massa, varius vitae pellentesque in, mollis quis ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vulputate erat nec purus lacinia at ultrices diam semper. Vivamus eget fermentum purus. Nam sit amet libero justo, congue accumsan dolor. Pellentesque imperdiet lobortis urna sed sollicitudin. Curabitur ac magna quis lacus commodo varius eu ac dui. Aliquam vel mauris tellus. Donec facilisis sem tempor turpis faucibus auctor. Proin tincidunt adipiscing nunc, et pellentesque metus iaculis eu.
+
+                        In convallis rutrum pretium. Praesent lobortis felis sed elit placerat sit amet suscipit enim rhoncus. Sed imperdiet pretium ullamcorper. Duis nec varius lacus. Nulla rutrum molestie tortor, a ornare sem tristique ac. Quisque rhoncus felis id augue viverra consectetur. Cras condimentum dapibus risus, eget condimentum mauris ultrices ac. Cras vel augue eros, vitae volutpat felis. Sed feugiat vulputate diam, vitae accumsan augue rhoncus non. Nullam non dolor diam.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jito-social-icon-bar d-none d-sm-block">
+
+        <a href="https://www.facebook.com/Jito.ladies.wing.kolkata" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="javascript:void(0)" class="google"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCbh4ybTqeY3iWIuTrRBKMEA" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
+        <a href="javascript:void(0)" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/jito-ladies-wing-kolkata/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+    <!-- libs-->
+    <script src="./js/jquery.min.js">
+    </script>
+    <script src="./js/libs.min.js">
+    </script>
+    <!-- scripts-->
+    <script src="./js/common.min.js">
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://foliotek.github.io/Croppie/croppie.js"></script>
+    <script type="text/javascript">
+        // Start upload preview image
+        $(".gambar").attr("src", "./img/ahimsa-event/upload.png");
+        var $uploadCrop,
+            tempFilename,
+            rawImg,
+            imageId;
+        function readFile(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('.upload-demo').addClass('ready');
+                    $('#cropImagePop').modal('show');
+                    rawImg = e.target.result;
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+            else {
+                swal("Sorry - you're browser doesn't support the FileReader API");
+            }
+        }
+
+        $uploadCrop = $('#upload-demo').croppie({
+            viewport: {
+                width: 250,
+                height: 250,
+            },
+            enforceBoundary: false,
+            enableExif: true
+        });
+        $('#cropImagePop').on('shown.bs.modal', function () {
+            // alert('Shown pop');
+            $uploadCrop.croppie('bind', {
+                url: rawImg
+            }).then(function () {
+                console.log('jQuery bind complete');
+            });
+        });
+
+        $('.item-img').on('change', function () {
+            imageId = $(this).data('id'); tempFilename = $(this).val();
+            $('#cancelCropBtn').data('id', imageId); readFile(this);
+        });
+        $('#cropImageBtn').on('click', function (ev) {
+            $uploadCrop.croppie('result', {
+                type: 'base64',
+                format: 'jpeg',
+                size: { width: 150, height: 150 }
+            }).then(function (resp) {
+                $('#item-img-output').attr('src', resp);
+                $('#cropImagePop').modal('hide');
+            });
+        });
+        // End upload preview image
+    </script>
+
+    <script>
+        $(".test").click(function () {
+            $(".item-img").click();
+        })
+    </script>
+
+    <script>
+
+        $("#btn_save_image").click(function () {
+            $(".preloader").show();
+            //$("#item-img-output").attr('style', ' position: absolute;top: 136px;left: 52px;height: 97px;width: auto; ');
+            html2canvas(document.getElementById("my-node")).then(function (canvas) {
+                var Profile_Image = $("#galleryImagesdata1").val();
+                var model = {};
+                model.Profile_Image = Profile_Image;
+                model.Member_ID = $("#Member_ID").val();
+                model.Image = canvas.toDataURL();
+                $.ajax({
+                    url: '/save-ahimsa-image',
+                    type: 'POST',
+                    data: model,
+                    dataType: "json",
+                    beforeSend: function () { },
+                    complete: function () {
+                        $(".preloader").hide(); $("#social-links").show();
+                    },
+                    success: function (data) {
+                        $(".download-link").attr('href', data.responseText)
+                        document.getElementsByClassName("download-link")[0].click();
+                    }
+                });
+            });
+        });
+        $(".facebook-link").on("click", function () {
+            $(".preloader").show();
+            event.preventDefault();
+            html2canvas(document.getElementById("my-node")).then(function (canvas) {
+                var Profile_Image = $("#galleryImagesdata1").val();
+                var model = {};
+                model.Profile_Image = Profile_Image;
+                model.Member_ID = $("#Member_ID").val();
+                model.Image = canvas.toDataURL();
+                $.ajax({
+                    url: '/save-ahimsa-image',
+                    type: 'POST',
+                    data: model,
+                    dataType: "json",
+                    beforeSend: function () { },
+                    complete: function () {
+                        $(".preloader").hide(); $("#social-links").show();
+                    },
+                    success: function (data) {
+                        window.open(`https://www.facebook.com/sharer.php?u=${data.responseText}`, 'sharer', 'toolbar=0,status=0,width=626,height=436');
+                    }
+                });
+            });
+        });
+
+        //html2canvas(document.getElementById("my-node")).then(function (canvas) {
+        //    $('img').attr('src',canvas.toDataURL());
+        //});
+       
+        $(".linkedin-link").on("click", function () {
+            $(".preloader").show();
+            event.preventDefault();
+            html2canvas(document.getElementById("my-node")).then(function (canvas) {
+                var Profile_Image = $("#galleryImagesdata1").val();
+                var model = {};
+                model.Profile_Image = Profile_Image;
+                model.Member_ID = $("#Member_ID").val();
+                model.Image = canvas.toDataURL();
+                $.ajax({
+                    url: '/save-ahimsa-image',
+                    type: 'POST',
+                    data: model,
+                    dataType: "json",
+                    beforeSend: function () { },
+                    complete: function () {
+                        $(".preloader").hide();  $("#social-links").show();
+                    },
+                    success: function (data) {
+                        window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${data.responseText}`, 'sharer', 'toolbar=0,status=0,width=626,height=436');
+                    }
+                });
+            });
+        });
+
+        $(".toggleImage").click(function () {
+            var imageName = $(".ahimsa-profile-image").attr('src');
+            var explodeImage = imageName.split("/");
+            var lastImage = explodeImage[explodeImage.length - 1];
+            explodeImage.pop();
+            if ($(this).val() == "Social Profile") {
+                $("#item-img-output").attr('style', '     position: absolute;top: 135px;left: 51px; height: 99px;width: auto; ');
+                $("#my-node").addClass("upperr")
+                $("#item-img-output").addClass("img-position-cls-asimsa1").removeClass("img-position-cls-asimsa");
+                $(".ahimsa-profile-image").addClass("imggg").removeClass("img-fluid")
+                explodeImage.push("ahimsa-run1.png");
+                $(".ahimsa-profile-image").attr('src', explodeImage.join("/"));
+                $("#btn_toggle_image").text("For Posting");
+            } else {
+                $("#item-img-output").removeAttr('style');
+                $("#my-node").removeClass("upperr")
+                $("#item-img-output").addClass("img-position-cls-asimsa").removeClass("img-position-cls-asimsa1");
+                $(".ahimsa-profile-image").removeClass("imggg").addClass("img-fluid")
+                explodeImage.push("ahimsa-run.jpg");
+                $(".ahimsa-profile-image").attr('src', explodeImage.join("/"));
+                $("#btn_toggle_image").text("For Social Profile");
+            }
+
+        });
+    </script>
+
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: '/get-quote-of-the-day',
+                type: "GET",
+                async: true,
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data.success);
+                    if (data.success == true) {
+                        $("#index_quote").text(data.responseText);
+                    }
+                    else {
+                        $("#index_quote").text("There is no limit to what we, as women, can accomplish.");
+                    }
+                },
+                error: function () {
+                    console.log('unable to fatch quote of the day.')
+                }
+            });
+
+            $.ajax({
+                url: '/get-today-member-birthday',
+                type: "GET",
+                async: true,
+                success: function (data) {
+                    $("#todaysJitoMemberBirthday").html(data);
+                },
+                error: function () {
+                    console.log('unable to fatch birthday section.')
+                }
+            });
+
+            $.ajax({
+                url: '/get-recent-jito-event',
+                type: "GET",
+                async: true,
+                success: function (data) {
+                    $("#recentJitoEvents").html(data);
+                    $('.items-slider').slick({
+                        autoplay: true,
+                        autoplaySpeed: 3000,
+                        infinite: true,
+                        speed: 3000,
+                        fade: true,
+                        slide: 'div',
+                        cssEase: 'linear'
+                    });
+                    $('#recentJitoEvents').find('.slick-prev').html('<i class="fa fa-angle-left"></i>');
+                    $('#recentJitoEvents').find('.slick-next').html('<i class="fa fa-angle-right"></i>');
+                },
+                error: function () {
+                    console.log('unable to fatch event section.')
+                }
+            });
+
+
+            $.ajax({
+                url: '/get-social-connections',
+                type: "GET",
+                async: true,
+                dataType: 'json',
+                success: function (data) {
+                    if ($.trim(data.responseText.Facebook_Link)) {
+                        $('#fLink').attr('href', data.responseText.Facebook_Link)
+                    }
+                    if ($.trim(data.responseText.Instagram_Link)) {
+                        $('#instaLink').attr('href', data.responseText.Instagram_Link)
+                    }
+                    if ($.trim(data.responseText.YouTube_Link)) {
+                        $('#yLink').attr('href', data.responseText.YouTube_Link)
+                    }
+                    if ($.trim(data.responseText.Twitter_Link)) {
+                        $('#tLink').attr('href', data.responseText.Twitter_Link)
+                    }
+                    if ($.trim(data.responseText.Linkedin_Link)) {
+                        $('#lLink').attr('href', data.responseText.Linkedin_Link)
+                    }
+                }
+            });
+        });
+
+        if ($(".execMember").length == 0) {
+            $(".executive_list").hide()
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    
+    
 
 </body>
-</html>
-<script>
-var _URL = window.URL || window.webkitURL;
 
-	$("#file").change(function(e) {
-		var image, file;
-		if ((file = this.files[0])) {
-			image = new Image();
-			image.onload = function() {
-					src = this.src;
-			$('#uploadPreview').attr('src',src);
-					e.preventDefault();
-				}
-			};
-			image.src = _URL.createObjectURL(file);
-	});
-	</script>
+</html>
