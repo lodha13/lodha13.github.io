@@ -1,0 +1,1173 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    
+    <!-- styles-->
+    <link rel="stylesheet" href="./css/styles.min.css?v=3">
+    <link rel="stylesheet" href="./css/custom.css?v=6">
+    
+    <link rel="stylesheet" href="./css/custom.css">
+    <!-- web-font loader-->
+    <script>
+        WebFontConfig = {
+            google: {
+                families: ['Quicksand:300,400,500,700', 'Permanent+Marker:400'],
+            }
+        }
+        function font() {
+            var wf = document.createElement('script')
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'
+            wf.type = 'text/javascript'
+            wf.async = 'true'
+            var s = document.getElementsByTagName('script')[0]
+            s.parentNode.insertBefore(wf, s)
+        }
+        font()
+    </script>
+
+    
+    <link href="https://foliotek.github.io/Croppie/croppie.css" rel="stylesheet" />
+
+
+    <style type="text/css">
+        .ahimsa-banner {
+            width: 488px;
+            left: 292px;
+        }
+                label.cabinet {
+                    display: block;
+                    cursor: pointer;
+                    top: -1px;
+                    left: 0px;
+                    position: absolute;
+                }
+
+                    label.cabinet input.file {
+                        position: relative;
+                        height: 100%;
+                        width: auto;
+                        opacity: 0;
+                        -moz-opacity: 0;
+                        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+                        margin-top: -30px;
+                    }
+
+                #upload-demo {
+                    width: 100%;
+                    height: 466px;
+                    margin-bottom: 35px;
+                }
+
+                figure figcaption {
+                    position: absolute;
+                    top: 7px;
+                    bottom: 0;
+                    height: 35px;
+                    width: 35px;
+                    margin-left: 10px;
+                    color: #005e9e;
+                    background-color: #fff;
+                    padding-left: 10px;
+                    padding-top: 8px;
+                    border-radius: 50%;
+                    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+                }
+
+                .img-thumbnail {
+                    display: inline-block;
+                    max-width: 100%;
+                    width: 150px;
+                    height: 150px;
+                    padding: 0;
+                    line-height: 1.42857143;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                    -webkit-transition: all .2s ease-in-out;
+                    -o-transition: all .2s ease-in-out;
+                    transition: all .2s ease-in-out;
+                }
+
+        .img-position-cls-asimsa {
+            position: absolute;
+            top: 314px;
+            left: 66px;
+            height: 115px;
+            width: auto;
+        }
+        .img-position-cls-asimsa1 {
+            position: absolute;
+            top: 28px;
+            left: 136px;
+            height: 65px;
+            width: 65px;
+        }
+                @media only screen and (max-width: 1200px) {
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 117px;
+                        height: 117px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 316px;
+                        left: 67px;
+                        width: auto;
+                        height: 112px;
+                    }
+                    .img-position-cls-asimsa1 {
+						position: absolute;
+						top: 28px;
+						left: 136px;
+						height: 65px;
+						width: 65px;
+					}
+
+                }
+
+
+                @media only screen and (max-width: 992px) {
+
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 182px;
+                        height: 182px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 250px;
+                        left: 56px;
+                        height: 89px;
+                        width: auto;
+                    }
+
+                    .img-position-cls-asimsa1 {
+						position: absolute;
+						top: 28px;
+						left: 136px;
+						height: 65px;
+						width: 65px;
+					}
+                }
+
+                @media only screen and (max-width:768px) {
+                    .ahimsa-banner {
+                        width: 304px;
+                        height: 129px;
+                        top: 81px;
+                        text-align: center;
+                        margin: auto;
+                        left: 10px;
+                    }
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 180px;
+                        height: 180px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 382px;
+                        left: 78px;
+                        height: 136px;
+                        width: auto;
+                    }
+
+                    .img-position-cls-asimsa1 {
+						position: absolute;
+						top: 28px;
+						left: 136px;
+						height: 65px;
+						width: 65px;
+					}
+                }
+
+
+                @media only screen and (max-width:600px) {
+
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 135px;
+                        height: 135px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 283px;
+                        left: 62px;
+                        height: 101px;
+                        width: auto;
+                    }
+                    .img-position-cls-asimsa1 {
+						position: absolute;
+						top: 28px;
+						left: 136px;
+						height: 65px;
+						width: 65px;
+					}
+
+                }
+            @media only screen and (max-width: 530px)
+                {
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 277px;
+                        left: 61px;
+                        height: 99px;
+                        width: auto;
+                    }
+
+                    .img-position-cls-asimsa1 {
+						position: absolute;
+						top: 28px;
+						left: 136px;
+						height: 65px;
+						width: 65px;
+					}
+            }
+
+                @media only screen and (max-width:500px) {
+
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 101px;
+                        height: 101px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 260px;
+                        left: 57px;
+                        height: 95px;
+                        width: auto;
+                    }
+
+                    .img-position-cls-asimsa1 {
+						position: absolute;
+						top: 28px;
+						left: 136px;
+						height: 65px;
+						width: 65px;
+					}
+                }
+        @media only screen and (max-width: 440px) {
+             .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 227px;
+                        left: 52px;
+                        height: 82px;
+                        width: auto;
+                    }
+
+            
+            .upperr {
+				width: 430px;
+				height: 430px;
+				overflow: hidden;
+			}
+
+            .imggg {
+                width: 100% !important;
+                height: 100% !important;
+                /*margin-top: -135px !important;*/
+                /*margin-left: -10px !important;*/
+            }
+
+            .img-position-cls-asimsa1 {
+				position: absolute;
+				top: 28px;
+				left: 136px;
+				height: 65px;
+				width: 65px;
+			}
+        }
+
+                @media only screen and (max-width:412px) {
+                    .upperr {
+                        width: 384px !important;
+                        height: 384px !important;
+                        overflow: hidden;
+                    }
+
+                    
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 100px;
+                        height: 100px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+                   
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 211px;
+                        left: 50px;
+                        height: 77px;
+                        width: auto;
+                    }
+/**/
+                    .img-position-cls-asimsa1 {
+						position: absolute;
+						top: 26px;
+						left: 124px;
+						height: 55px;
+						width: 55px;
+					}
+                }
+
+                @media only screen and (max-width: 410px) {
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 211px;
+                        left: 49px;
+                        height: 77px;
+                        width: auto;
+                    }
+
+                    .img-position-cls-asimsa1 {
+						position: absolute;
+						top: 26px;
+						left: 124px;
+						height: 55px;
+						width: 55px;
+					}
+                }
+
+                /*@media only screen and (max-width:400px) {
+
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 95px;
+                        height: 95px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }*/
+
+                   /* .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 205px;
+                        left: 49px;
+                        height: 74px;
+                        width: auto;
+                    }*/
+
+                    /*.img-position-cls-asimsa {
+                        position: absolute;
+                        top: 135px;
+                        left: 51px;
+                        width: auto;
+                        height: 99px;
+                    }
+                }*/
+
+
+                @media only screen and (max-width:393px) {
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 201px;
+                        left: 48px;
+                        height: 73px;
+                        width: auto;
+                    }
+
+                    .img-position-cls-asimsa1 {
+						position: absolute;
+						top: 25px;
+						left: 120px;
+						height: 52px;
+						width: 52px;
+					}
+/*
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 104px;
+                        left: 44px;
+                        height: 87px;
+                        width: auto;
+                    }*/
+
+                    .upperr {
+                        width: 368px !important;
+                        height: 368px !important;
+                        /*border-radius: 50%;*/
+                        overflow: hidden;
+                    }
+                    .imggg {
+						width: 100% !important;
+						height: 100% !important;
+						/*margin-top: -135px !important;*/
+						/*margin-left: -10px !important;*/
+					}
+                }
+
+                @media only screen and (max-width:390px) {
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 200px;
+                        left: 48px;
+                        height: 71px;
+                        width: auto;
+                    }
+
+
+                    .img-position-cls-asimsa1 {
+						position: absolute;
+						top: 25px;
+						left: 119px;
+						height: 55px;
+						width: 55px;
+					}
+                    /*
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 104px;
+                        left: 44px;
+                        height: 87px;
+                        width: auto;
+                    }*/
+
+                    .upperr {
+                        width: 368px !important;
+                        height: 368px !important;
+                        overflow: hidden;
+                    }
+
+                    .imggg {
+						width: 100% !important;
+						height: 100% !important;
+						/*margin-top: -135px !important;*/
+						/*margin-left: -10px !important;*/
+					}
+                }
+
+                @media only screen and (max-width:375px) {
+                    .upperr {
+                        width: 363px !important;
+                        height: 363px !important;
+                        overflow: hidden;
+                    }
+                    .imggg {
+						width: 100% !important;
+						height: 100% !important;
+						/*margin-top: -135px !important;*/
+						/*margin-left: -10px !important;*/
+					}
+                   
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 90px;
+                        height: 90px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+                    .img-position-cls-asimsa1 {
+						position: absolute;
+						top: 24px;
+						left: 117px;
+						height: 55px;
+						width: 55px;
+					}
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 191px;
+                        left: 46px;
+                        height: 69px;
+                        width: auto;
+                    }
+                }
+
+
+
+                @media only screen and (max-width:360px) {
+                    .upperr {
+                        width: 331px !important;
+                        height: 331px !important;
+                        overflow: hidden;
+                    }
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 87px;
+                        height: 87px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 183px;
+                        left: 45px;
+                        height: 66px;
+                        width: auto;
+                    }
+
+                    .img-position-cls-asimsa1 {
+						position: absolute;
+						top: 21px;
+						left: 108px;
+						height: 50px;
+						width: 50px;
+					}
+
+                    .imggg {
+						width: 100% !important;
+						height: 100% !important;
+						/*margin-top: -135px !important;*/
+						/*margin-left: -10px !important;*/
+					}
+
+
+                }
+
+                @media only screen and (max-width:280px) {
+                    .upperr {
+                        width: 252px !important;
+                        height: 252px !important;
+                        overflow: hidden;
+                    }
+
+                    .imggg {
+						width: 100% !important;
+						height: 100% !important;
+						/*margin-top: -135px !important;*/
+						/*margin-left: -10px !important;*/
+					}
+
+                   
+                    .img-thumbnail {
+                        display: inline-block;
+                        max-width: 100%;
+                        width: 65px;
+                        height: 65px;
+                        padding: 0;
+                        line-height: 1.42857143;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 22%);
+                        -webkit-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                    }
+                    .img-position-cls-asimsa1 {
+						position: absolute;
+						top: 15px;
+						left: 85px;
+						height: 40px;
+						width: 40px;
+					}
+
+
+                    .img-position-cls-asimsa {
+                        position: absolute;
+                        top: 138px;
+                        left: 37px;
+                        height: 51px;
+                        width: auto;
+                    }
+                }
+
+                .blog-post__socials {
+                    display: inline-flex;
+                }
+
+                .btn-download-wid-set {
+                }
+
+        .promo-primary {
+            background-color: #292A58;
+        }
+
+        .para-peace {
+            color: #afaa9a;
+            margin-top:25px;
+        }
+
+
+        .toggleImage{
+            width:20px;
+        }
+        .upperr {
+            width: 430px;
+            height: 430px;
+            overflow: hidden;
+        }
+
+        .imggg {
+            width: 100%;
+            height: 100%;
+            /*margin-top: -142px;
+            margin-left: -10px;*/
+        }
+
+      
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="preloader wait-loader" style="display:none">
+        <div class="loader">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="page-wrapper">
+        <!-- aside dropdown start-->
+        <!-- aside dropdown end-->
+        <!-- top bar start-->
+        <div class="top-bar d-none d-lg-block">
+            <div class="container-fluid">
+                <div class="row align-items-end">
+
+    
+    
+
+                </div>
+            </div>
+        </div>
+        <!-- top bar end-->
+        <!-- header start-->
+        
+<section class="pt-4 pb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 co-12 mx-auto">
+                <div id="my-node" class="upperr">
+                    <div>
+                        <img src="./img/ahimsa-event/pedal_march.png" alt="Alternate Text" class="imggg ahimsa-profile-image">
+                        <label class="cabinet center-block">
+                            <figure>
+                                <img src="./IIFL JITO AHIMSA RUN - FOR PEACE , FOR NON VIOLENCE_files/upload.png" class="gambar img-responsive img-thumbnail img-position-cls-asimsa1" id="item-img-output">
+                            </figure>
+                            <input type="file" class="item-img file center-block" name="file_photo" accept="image/*">
+                        </label>
+                    </div>
+                </div>
+                    <!-- main code -->
+                    <!--<div id="my-node">
+        <div>
+
+            <img src="~./img/ahimsa-event/ahimsa-run1.png" alt="Alternate Text" class="img-fluid img-cls-disprofile-aahimsa ahimsa-profile-image">-->
+                    <!-- main code -->
+                    <!--<label class="cabinet center-block">
+        <figure>
+            <img src="" class="gambar img-responsive img-thumbnail img-position-cls-asimsa" id="item-img-output">
+        </figure>
+        <input type="file" class="item-img file center-block" name="file_photo" accept="image/*">
+    </label>-->
+                    <!-- main code -->
+                    <!--</div>
+    </div>-->
+                </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-lg-6 col-12 mx-auto">
+                <div class="row ">
+                
+                    <div class="col-md-3 pb-2">
+                        <a href="#" class="btn btn-primary test btn-block">Select&nbsp;Image</a>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" id="btn_save_image" class="btn btn-success btn-block">Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- ============================================================ -->
+<!-- model start -->
+<!-- ============================================================ -->
+
+<div class="modal fade" id="cropImagePop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    <?=multiLanguage( "Edit Foto" , "Edit Photo" )?>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div id="upload-demo" class="center-block"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" id="cropImageBtn" class="btn btn-primary">Crop</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============================================================ -->
+<!-- model end -->
+<!-- ============================================================ -->
+<a href="#" download class="download-link" style="display:none" target="_blank">download</a>
+<div id="previewImg" style="display:none">
+</div>
+        </main>
+        
+        <!-- Join end-->
+        <!-- footer front_3 start-->
+        <footer class="footer footer--front_3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+       
+    <!-- footer socials start-->
+    <!-- footer socials end-->
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer front_3 end-->
+    </div>
+    <!-- Crop Img model start  -->
+    <div class="modal fade" id="cropImagePop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="opacity: 1;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="mt-4">
+                        Crop Image
+                    </h4>
+                    <button type="button" class="close mt-3" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <!--<h4 class="modal-title" id="myModalLabel">-->
+                        
+                        
+                    <!--</h4>-->
+                </div>
+                <div class="modal-body">
+                    <div id="upload-demo" class="center-block"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" id="cropImageBtn" class="btn btn-primary">Crop</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Crop Img model end  -->
+    <!-- Modal -->
+    <div class="modal fade" id="membermyModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Modal Header</h6>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- libs-->
+    <script src="./js/jquery.min.js">
+    </script>
+    <script src="./js/libs.min.js">
+    </script>
+    <!-- scripts-->
+    <script src="./js/common.min.js">
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://foliotek.github.io/Croppie/croppie.js"></script>
+    <script type="text/javascript">
+        // Start upload preview image
+        $(".gambar").attr("src", "./img/ahimsa-event/upload.png");
+        var $uploadCrop,
+            tempFilename,
+            rawImg,
+            imageId;
+        function readFile(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('.upload-demo').addClass('ready');
+                    $('#cropImagePop').modal('show');
+                    rawImg = e.target.result;
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+            else {
+                swal("Sorry - you're browser doesn't support the FileReader API");
+            }
+        }
+
+        $uploadCrop = $('#upload-demo').croppie({
+            viewport: {
+                width: 250,
+                height: 250,
+            },
+            enforceBoundary: false,
+            enableExif: true
+        });
+        $('#cropImagePop').on('shown.bs.modal', function () {
+            // alert('Shown pop');
+            $uploadCrop.croppie('bind', {
+                url: rawImg
+            }).then(function () {
+                console.log('jQuery bind complete');
+            });
+        });
+
+        $('.item-img').on('change', function () {
+            imageId = $(this).data('id'); tempFilename = $(this).val();
+            $('#cancelCropBtn').data('id', imageId); readFile(this);
+        });
+        $('#cropImageBtn').on('click', function (ev) {
+            $uploadCrop.croppie('result', {
+                type: 'base64',
+                format: 'jpeg',
+                size: { width: 150, height: 150 }
+            }).then(function (resp) {
+                $('#item-img-output').attr('src', resp);
+                $('#cropImagePop').modal('hide');
+            });
+        });
+        // End upload preview image
+    </script>
+
+    <script>
+        $(".test").click(function () {
+            $(".item-img").click();
+        })
+    </script>
+
+    <script>
+
+        $("#btn_save_image").click(function () {
+            
+            //$("#item-img-output").attr('style', ' position: absolute;top: 136px;left: 52px;height: 97px;width: auto; ');
+            html2canvas(document.getElementById("my-node")).then(function (canvas) {
+                var Profile_Image = $("#galleryImagesdata1").val();
+                var model = {};
+                model.Profile_Image = Profile_Image;
+                model.Member_ID = $("#Member_ID").val();
+                model.Image = canvas.toDataURL();
+			
+		var anchorTag = document.createElement("a");
+		document.body.appendChild(anchorTag);
+		//document.getElementById("btn-Preview-Image").appendChild(canvas);
+		anchorTag.download = "filename.jpg";
+		anchorTag.href = canvas.toDataURL();
+		anchorTag.target = '_blank';
+		anchorTag.click();
+		
+		
+                /*$.ajax({
+                    url: '/save-ahimsa-image',
+                    type: 'POST',
+                    data: model,
+                    dataType: "json",
+                    beforeSend: function () { },
+                    complete: function () {
+                        $(".preloader").hide(); $("#social-links").show();
+                    },
+                    success: function (data) {
+                        $(".download-link").attr('href', data.responseText)
+                        document.getElementsByClassName("download-link")[0].click();
+                    }
+                });*/
+            });
+        });
+        $(".facebook-link").on("click", function () {
+            $(".preloader").show();
+            event.preventDefault();
+            html2canvas(document.getElementById("my-node")).then(function (canvas) {
+                var Profile_Image = $("#galleryImagesdata1").val();
+                var model = {};
+                model.Profile_Image = Profile_Image;
+                model.Member_ID = $("#Member_ID").val();
+                model.Image = canvas.toDataURL();
+                $.ajax({
+                    url: '/save-ahimsa-image',
+                    type: 'POST',
+                    data: model,
+                    dataType: "json",
+                    beforeSend: function () { },
+                    complete: function () {
+                        $(".preloader").hide(); $("#social-links").show();
+                    },
+                    success: function (data) {
+                        window.open(`https://www.facebook.com/sharer.php?u=${data.responseText}`, 'sharer', 'toolbar=0,status=0,width=626,height=436');
+                    }
+                });
+            });
+        });
+
+        //html2canvas(document.getElementById("my-node")).then(function (canvas) {
+        //    $('img').attr('src',canvas.toDataURL());
+        //});
+       
+        $(".linkedin-link").on("click", function () {
+            $(".preloader").show();
+            event.preventDefault();
+            html2canvas(document.getElementById("my-node")).then(function (canvas) {
+                var Profile_Image = $("#galleryImagesdata1").val();
+                var model = {};
+                model.Profile_Image = Profile_Image;
+                model.Member_ID = $("#Member_ID").val();
+                model.Image = canvas.toDataURL();
+                $.ajax({
+                    url: '/save-ahimsa-image',
+                    type: 'POST',
+                    data: model,
+                    dataType: "json",
+                    beforeSend: function () { },
+                    complete: function () {
+                        $(".preloader").hide();  $("#social-links").show();
+                    },
+                    success: function (data) {
+                        window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${data.responseText}`, 'sharer', 'toolbar=0,status=0,width=626,height=436');
+                    }
+                });
+            });
+        });
+
+        $(".toggleImage").click(function () {
+            var imageName = $(".ahimsa-profile-image").attr('src');
+            var explodeImage = imageName.split("/");
+            var lastImage = explodeImage[explodeImage.length - 1];
+            explodeImage.pop();
+            if ($(this).val() == "Social Profile") {
+                $("#item-img-output").attr('style', '     position: absolute;top: 135px;left: 51px; height: 99px;width: auto; ');
+                $("#my-node").addClass("upperr")
+                $("#item-img-output").addClass("img-position-cls-asimsa1").removeClass("img-position-cls-asimsa");
+                $(".ahimsa-profile-image").addClass("imggg").removeClass("img-fluid")
+                explodeImage.push("ahimsa-run1.png");
+                $(".ahimsa-profile-image").attr('src', explodeImage.join("/"));
+                $("#btn_toggle_image").text("For Posting");
+            } else {
+                $("#item-img-output").removeAttr('style');
+                $("#my-node").removeClass("upperr")
+                $("#item-img-output").addClass("img-position-cls-asimsa").removeClass("img-position-cls-asimsa1");
+                $(".ahimsa-profile-image").removeClass("imggg").addClass("img-fluid")
+                explodeImage.push("ahimsa-run.jpg");
+                $(".ahimsa-profile-image").attr('src', explodeImage.join("/"));
+                $("#btn_toggle_image").text("For Social Profile");
+            }
+
+        });
+    </script>
+
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: '/get-quote-of-the-day',
+                type: "GET",
+                async: true,
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data.success);
+                    if (data.success == true) {
+                        $("#index_quote").text(data.responseText);
+                    }
+                    else {
+                        $("#index_quote").text("There is no limit to what we, as women, can accomplish.");
+                    }
+                },
+                error: function () {
+                    console.log('unable to fatch quote of the day.')
+                }
+            });
+
+            $.ajax({
+                url: '/get-today-member-birthday',
+                type: "GET",
+                async: true,
+                success: function (data) {
+                    $("#todaysJitoMemberBirthday").html(data);
+                },
+                error: function () {
+                    console.log('unable to fatch birthday section.')
+                }
+            });
+
+            $.ajax({
+                url: '/get-recent-jito-event',
+                type: "GET",
+                async: true,
+                success: function (data) {
+                    $("#recentJitoEvents").html(data);
+                    $('.items-slider').slick({
+                        autoplay: true,
+                        autoplaySpeed: 3000,
+                        infinite: true,
+                        speed: 3000,
+                        fade: true,
+                        slide: 'div',
+                        cssEase: 'linear'
+                    });
+                    $('#recentJitoEvents').find('.slick-prev').html('<i class="fa fa-angle-left"></i>');
+                    $('#recentJitoEvents').find('.slick-next').html('<i class="fa fa-angle-right"></i>');
+                },
+                error: function () {
+                    console.log('unable to fatch event section.')
+                }
+            });
+
+
+            $.ajax({
+                url: '/get-social-connections',
+                type: "GET",
+                async: true,
+                dataType: 'json',
+                success: function (data) {
+                    if ($.trim(data.responseText.Facebook_Link)) {
+                        $('#fLink').attr('href', data.responseText.Facebook_Link)
+                    }
+                    if ($.trim(data.responseText.Instagram_Link)) {
+                        $('#instaLink').attr('href', data.responseText.Instagram_Link)
+                    }
+                    if ($.trim(data.responseText.YouTube_Link)) {
+                        $('#yLink').attr('href', data.responseText.YouTube_Link)
+                    }
+                    if ($.trim(data.responseText.Twitter_Link)) {
+                        $('#tLink').attr('href', data.responseText.Twitter_Link)
+                    }
+                    if ($.trim(data.responseText.Linkedin_Link)) {
+                        $('#lLink').attr('href', data.responseText.Linkedin_Link)
+                    }
+                }
+            });
+        });
+
+        if ($(".execMember").length == 0) {
+            $(".executive_list").hide()
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    
+    
+
+</body>
+
+</html>
